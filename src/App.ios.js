@@ -6,7 +6,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { NativeRouter as Router, Route, Switch } from 'react-router-native';
 
-import { Navbar, NotFound } from './components'
+import { Navbar, NotFound } from './components';
 import { HomeContainer, AboutContainer } from './containers';
 
 const Routes = () => (

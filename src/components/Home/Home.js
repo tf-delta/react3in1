@@ -3,8 +3,6 @@
  */
 import React from 'react';
 
-import actions from '../../actions';
-
 class Home extends React.Component {
   render() {
     const {reducer, noop} = this.props;

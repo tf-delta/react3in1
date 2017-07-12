@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native';
 import { Link } from 'react-router-native';
 
 const About = ({reducer}) => (
@@ -41,10 +41,10 @@ const Navbar = () => (
 const styles = StyleSheet.create({
   container: {
     marginTop: 25,
-    padding: 10,
+    padding: 10
   },
   header: {
-    fontSize: 20,
+    fontSize: 20
   },
   nav: {
     flexDirection: 'row',
@@ -53,16 +53,16 @@ const styles = StyleSheet.create({
   navItem: {
     flex: 1,
     alignItems: 'center',
-    padding: 10,
+    padding: 10
   },
   subNavItem: {
-    padding: 5,
+    padding: 5
   },
   topic: {
     textAlign: 'center',
-    fontSize: 15,
+    fontSize: 15
   }
-})
+});
 
 export {
   About,

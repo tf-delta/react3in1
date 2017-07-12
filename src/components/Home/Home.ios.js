@@ -2,9 +2,7 @@
  * Created by peterk on 7/11/17.
  */
 import React from 'react';
-import { TouchableOpacity, Text, View } from 'react-native'
-
-import actions from '../../actions';
+import { TouchableOpacity, Text, View } from 'react-native';
 
 class Home extends React.Component {
   render() {

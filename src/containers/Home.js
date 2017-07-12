@@ -1,7 +1,6 @@
 /**
  * Created by peterk on 7/11/17.
  */
-import React from 'react';
 import { connect } from 'react-redux';
 
 import { Home } from '../components'

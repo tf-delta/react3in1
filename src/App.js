@@ -5,7 +5,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { Navbar, NotFound } from './components'
+import { Navbar, NotFound } from './components';
 import { HomeContainer, AboutContainer } from './containers';
 
 const Routes = () => (
