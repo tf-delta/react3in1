@@ -51,6 +51,6 @@ react-native run-ios
 
 
 ## Useful Links
-[Create React App](https://github.com/facebookincubator/create-react-app)
-[](https://github.com/facebook/react-native)
-[Create React Native App](https://github.com/react-community/create-react-native-app): using [Expo](https://expo.io/)
+- [Create React App](https://github.com/facebookincubator/create-react-app)
+- [Create React Native App](https://github.com/react-community/create-react-native-app): using [Expo](https://expo.io/)
+- [react-native-cli](https://github.com/facebook/react-native)
