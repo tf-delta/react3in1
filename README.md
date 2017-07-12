@@ -3,8 +3,13 @@
 ## Quick start
 ```
 # start android
+ln -sfn package.native.json package.json
 yarn install
 yarn run android
+# start web
+ln -sfn package.web.json package.json
+yarn install
+yarn start
 ```
 
 ## Appendix
