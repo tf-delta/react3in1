@@ -1,4 +1,10 @@
-# react sample app running on web, android, and ios
+# React sample app running on web, android, and ios
+
+## Techs
+- [React v15](https://facebook.github.io/react/)
+- [React Native v0.46](https://facebook.github.io/react-native/)
+- [React Redux v5](http://redux.js.org/)
+- [React Router v4](https://reacttraining.com/react-router/)
 
 ## Quick start
 ```
@@ -10,6 +16,7 @@ yarn run android
 ln -sfn package.web.json package.json
 yarn install
 yarn start
+# not tested on ios
 ```
 
 ## Appendix
