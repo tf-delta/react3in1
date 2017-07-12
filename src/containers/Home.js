@@ -2,25 +2,11 @@
  * Created by peterk on 7/11/17.
  */
 import React from 'react';
-import { TouchableOpacity, Text, View } from 'react-native'
 import { connect } from 'react-redux';
 
-import actions from '../actions';
+import { Home } from '../components'
 
-class Home extends React.Component {
-  render() {
-    const {reducer, noop} = this.props;
-    return (
-        <View>
-        <Text>Home</Text>
-        <TouchableOpacity onPress={noop.bind(this)}>
-        <Text>Click HERE to increase the count below</Text>
-        </TouchableOpacity>
-        <Text>{'Count: '}{reducer.count}</Text>
-        </View>
-    );
-  }
-}
+import actions from '../actions';
 
 const mapHomeStateToProps = (state) => ({
     reducer: state.reducer
