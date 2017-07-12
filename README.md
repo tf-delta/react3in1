@@ -6,6 +6,7 @@
 - [React Redux v5](http://redux.js.org/)
 - [React Router v4](https://reacttraining.com/react-router/)
 
+
 ## Quick start
 ```
 # start android
@@ -19,20 +20,37 @@ yarn start
 # not tested on ios
 ```
 
+
 ## Appendix
-- create a react-native project
+- create and run a react-web project
+```
+npm install -g create-react-app yarn
+create-react-app MyWebApp
+cd MyWebApp
+yarn install
+yarn start
+```
+- create and run a react-native project
+```
+npm install -g create-react-app # or npm update -g create-react-app
+create-react-app MyNativeApp
+cd MyNativeApp
+# start app
+yarn start
+```
+- yet another way for react-native project
 ```
 npm install -g react-native-cli yarn
 npm update -g react-native-cli
-react-native init MyApp
-cd MyApp
+react-native init MyNativeApp
+cd MyNativeApp
 yarn install
-```
-- run a project
-```
 react-native run-android
 react-native run-ios
 ```
 
+
 ## Useful Links
-[Introducing Create React Native App](https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html)
+[Create React App](https://github.com/facebookincubator/create-react-app)
+[](https://github.com/facebook/react-native)
+[Create React Native App](https://github.com/react-community/create-react-native-app): using [Expo](https://expo.io/)
