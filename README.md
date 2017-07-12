@@ -54,3 +54,8 @@ react-native run-ios
 - [Create React App](https://github.com/facebookincubator/create-react-app)
 - [Create React Native App](https://github.com/react-community/create-react-native-app): using [Expo](https://expo.io/)
 - [react-native-cli](https://github.com/facebook/react-native)
+
+- [React Native Packages](https://js.coach/react-native)
+- [React Packages](https://js.coach/react)
+
+- [redux-persist](https://github.com/rt2zz/redux-persist)

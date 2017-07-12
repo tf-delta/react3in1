@@ -28,6 +28,12 @@ const Navbar = () => (
           style={styles.navItem}>
             <Text>Home</Text>
         </Link>
+          <Link
+              to="/pager"
+              underlayColor='#f0f4f7'
+              style={styles.navItem}>
+              <Text>Pager</Text>
+          </Link>
         <Link
           to="/about"
           underlayColor='#f0f4f7'
