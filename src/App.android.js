@@ -12,18 +12,13 @@ import { HomeContainer, AboutContainer } from './containers';
 const Routes = () => (
     <Switch>
         <Route path="/" exact component={HomeContainer} />
-        <Route path="/pager" exact component={Pager} />
         <Route path="/about" component={AboutContainer} />
         <Route component={NotFound}/>
     </Switch>
 );
 
-let viewStyle = {
-    flex: 1
-};
-
 const App = () => (
-    <Router><View style={ viewStyle }>
+    <Router><View>
     <Navbar/>
     <Routes/>
     </View></Router>

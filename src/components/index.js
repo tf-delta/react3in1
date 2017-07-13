@@ -1,6 +1,5 @@
 
 import Home from './Home';
-import Pager from './Pager';
 import {
   About,
   NotFound,
@@ -9,7 +8,6 @@ import {
 
 export {
   Home,
-  Pager,
   About,
   NotFound,
   Navbar

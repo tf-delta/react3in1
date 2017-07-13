@@ -7,7 +7,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Link } from 'react-router-native';
 
 const About = ({reducer}) => (
-    <View>
+    <View >
         <Text>About</Text>
         <Text>Current count: {reducer.count}</Text>
     </View>
@@ -28,12 +28,6 @@ const Navbar = () => (
           style={styles.navItem}>
             <Text>Home</Text>
         </Link>
-          <Link
-              to="/pager"
-              underlayColor='#f0f4f7'
-              style={styles.navItem}>
-              <Text>Pager</Text>
-          </Link>
         <Link
           to="/about"
           underlayColor='#f0f4f7'
@@ -49,9 +43,6 @@ const styles = StyleSheet.create({
     marginTop: 25,
     padding: 10
   },
-  header: {
-    fontSize: 20
-  },
   nav: {
     flexDirection: 'row',
     justifyContent: 'space-around'
@@ -61,13 +52,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 10
   },
-  subNavItem: {
-    padding: 5
-  },
-  topic: {
-    textAlign: 'center',
-    fontSize: 15
-  }
 });
 
 export {

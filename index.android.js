@@ -5,14 +5,14 @@ import { Provider } from "react-redux";
 import Root from './src/App.android';
 import Store from './src/Store';
 
-export default class Main extends React.Component {
-  render() {
+// export default class Main extends React.Component {
+//   render() {
+const Main = () => {
     return (
     <Provider store={Store}>
         <Root/>
     </Provider>
     )
-  }
-}
+};
 
 AppRegistry.registerComponent('react3in1', () => Main);
