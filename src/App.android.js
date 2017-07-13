@@ -4,23 +4,34 @@
 
 import React from 'react';
 import { View } from 'react-native';
-import { NativeRouter as Router, Route, Switch } from 'react-router-native';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 
-import { NotFound } from './components';
 import { HomeContainer, AboutContainer } from './containers';
 
-const Routes = () => (
-    <Switch>
-        <Route path="/" exact component={HomeContainer} />
-        <Route path="/about" component={AboutContainer} />
-        <Route component={NotFound}/>
-    </Switch>
-);
+const RouteConfigs = {
+    Home: {screen: HomeContainer},
+    About: {screen: AboutContainer}
+};
 
-const App = () => (
-    <Router><View style={{flex:1}}>
-        <Routes/>
-    </View></Router>
-);
+const StackNavigatorConfig = {
+    mode: 'card',
+    headerMode: 'screen'
+};
+//const App = StackNavigator(RouteConfigs, StackNavigatorConfig);
+
+const TabNavigatorConfig = {
+    lazy: true,
+    tabBarPosition: 'bottom',
+    tabBarOptions: {
+        activeTintColor: '#e91e63',
+        labelStyle: {
+            fontSize: 12
+        },
+        style: {
+            backgroundColor: 'blue'
+        }
+    }
+};
+const App = TabNavigator(RouteConfigs, TabNavigatorConfig);
 
 export default App;

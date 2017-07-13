@@ -4,7 +4,7 @@
 - [React v15](https://facebook.github.io/react/)
 - [React Native v0.46](https://facebook.github.io/react-native/)
 - [React Redux v5](http://redux.js.org/)
-- [React Router v4](https://reacttraining.com/react-router/)
+- [React Navigation v1](https://reactnavigation.org)
 
 
 ## Quick start
@@ -13,17 +13,15 @@
 ln -sfn package.native.json package.json
 yarn install
 yarn run android
-# start web
-ln -sfn package.web.json package.json
-yarn install
-yarn start
+# not tested on web
 # not tested on ios
 ```
 
-## About ListView
-- [ListView Doc](https://facebook.github.io/react-native/docs/listview.html)
-- Using a ListView latest: https://facebook.github.io/react-native/docs/using-a-listview.html)
-- Using a ListView v0.46:  https://facebook.github.io/react-native/releases/0.46/docs/using-a-listview.html
+## About React Navigation
+- [React Navigation Doc](https://reactnavigation.org/docs)
+- [StackNavigator](https://reactnavigation.org/docs/navigators/stack)
+- [Navigation Options](https://reactnavigation.org/docs/navigators/navigation-options#Stack-Navigation-Options)
+
 
 ## Appendix
 - create and run a react-web project

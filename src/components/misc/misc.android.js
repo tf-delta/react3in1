@@ -3,38 +3,41 @@
  */
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import { Link } from 'react-router-native';
 
-const About = ({reducer}) => (
+const About = ({reducer, navigation}) => (
     <View >
         <Text>About</Text>
         <Text>Current count: {reducer.count}</Text>
+        <Text>Count from Home: {navigation.state.params ? navigation.state.params.count : 'no count'}</Text>
     </View>
 );
+/* Specify the title of screen */
+// About.navigationOptions = {
+//     title: 'About'
+// };
+/* Title with param */
+// About.navigationOptions = ({navigation}) =>({
+//     title: `About(${navigation.state.params ? navigation.state.params.count : ''})`
+// });
+/* Title and more... */
+About.navigationOptions = ({navigation}) =>{
+    const {count} = navigation.state.params || '';
+    const {setParams} = navigation;
+    return {
+        title: `About(${count})`,
+        headerRight: (
+            <Button title="count+1"
+                    onPress={() => setParams({count: count+1})}
+            />
+        )
+    }
+};
 
 const NotFound = () => (
     <View>
         <Text>Not Found</Text>
-    </View>
-);
-
-const Navbar = () => (
-    <View style={styles.container}>
-      <View style={styles.nav}>
-        <Link
-          to="/"
-          underlayColor='#f0f4f7'
-          style={styles.navItem}>
-            <Text>Home</Text>
-        </Link>
-        <Link
-          to="/about"
-          underlayColor='#f0f4f7'
-          style={styles.navItem}>
-            <Text>About</Text>
-        </Link>
-      </View>
     </View>
 );
 
@@ -56,6 +59,5 @@ const styles = StyleSheet.create({
 
 export {
   About,
-  NotFound,
-  Navbar
+  NotFound
 };
