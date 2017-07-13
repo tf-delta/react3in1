@@ -6,7 +6,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { NativeRouter as Router, Route, Switch } from 'react-router-native';
 
-import { Navbar, NotFound, Pager } from './components';
+import { NotFound } from './components';
 import { HomeContainer, AboutContainer } from './containers';
 
 const Routes = () => (
@@ -18,9 +18,8 @@ const Routes = () => (
 );
 
 const App = () => (
-    <Router><View>
-    <Navbar/>
-    <Routes/>
+    <Router><View style={{flex:1}}>
+        <Routes/>
     </View></Router>
 );
 

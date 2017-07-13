@@ -20,6 +20,10 @@ yarn start
 # not tested on ios
 ```
 
+## About ListView
+- [ListView Doc](https://facebook.github.io/react-native/docs/listview.html)
+- [Using a ListView](https://facebook.github.io/react-native/docs/using-a-listview.html)
+
 
 ## Appendix
 - create and run a react-web project
