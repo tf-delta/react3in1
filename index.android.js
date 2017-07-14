@@ -7,7 +7,7 @@ import Store from './src/Store';
 
 // export default class Main extends React.Component {
 //   render() {
-const Main = () => {
+export default Main = () => {
     return (
     <Provider store={Store}>
         <Root/>

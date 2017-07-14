@@ -22,8 +22,9 @@ const About = ({reducer, navigation}) => (
 // });
 /* Title and more... */
 About.navigationOptions = ({navigation}) =>{
-    const {count} = navigation.state.params || '';
+    let {count} = navigation.state.params || '';
     const {setParams} = navigation;
+    count = count ? count : '';
     return {
         title: `About(${count})`,
         headerRight: (

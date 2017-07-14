@@ -3,25 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.46.1",
+    "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.5",
-    "react-router-native": "^4.1.1",
-    "redux": "^3.7.1"
+    "redux": "^3.7.1",
+    "redux-persist": "^4.8.2"
   },
   "devDependencies": {
-	"babel-jest": "20.0.3",
-	"babel-preset-react-native": "2.1.0",
-	"jest": "20.0.4",
-	"react-test-renderer": "16.0.0-alpha.12"
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
   },
   "scripts": {
-	"start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "log-android": "node node_modules/react-native/local-cli/cli.js log-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-	"test": "jest"
+    "log-ios": "node node_modules/react-native/local-cli/cli.js log-ios",
+    "test": "jest"
   },
   "jest": {
-	"preset": "react-native"
+    "preset": "react-native"
   }
 }

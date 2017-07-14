@@ -13,8 +13,6 @@ import {
 } from 'react-native';
 import GridView from '../GridView/GridView';
 
-let _listItemsIdCounter = 0;
-
 const _listItemsId = {
     'GridView': 'GridView',
     'ListViewMore': 'ListViewMore',
@@ -25,7 +23,7 @@ const _listItemsId = {
 const _listItems = {
     'List View': [
         {label: 'Grid View', id: _listItemsId.GridView},
-        {label: 'More...', id: _listItemsId.ListViewMore}
+        // {label: 'More...', id: _listItemsId.ListViewMore}
     ],
     'Event': [
         {label: 'Touchable', id: _listItemsId.Touchable},
@@ -39,6 +37,10 @@ const BASE_SIZE = 30;
 const RANDOM_FACTOR_MAX = 30;
 
 class Home extends React.Component {
+    static navigationOptions = {
+        title: 'Home'
+    };
+
     constructor(props) {
         super(props);
 

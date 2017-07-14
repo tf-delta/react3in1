@@ -9,10 +9,10 @@ import { HomeContainer, AboutContainer } from './containers';
 import * as comps from './components';
 
 const RouteConfigs = {
-    Home: {screen: comps.Home},
+    Home: {screen: HomeContainer},
     GridView: {screen: comps.GridView},
     Touchable: {screen: comps.Touchable},
-    About: {screen: comps.About}
+    About: {screen: AboutContainer}
 };
 
 const StackNavigatorConfig = {

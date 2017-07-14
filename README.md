@@ -1,9 +1,9 @@
-# React native controllers demo
+# React native components demo
 
 ## Techs
 - [React v15](https://facebook.github.io/react/)
 - [React Native v0.46](https://facebook.github.io/react-native/)
-
+- [React Navigation v1.0.0](https://reactnavigation.org/)
 
 ## Quick start
 ```
@@ -11,9 +11,9 @@
 ln -sfn package.native.json package.json
 yarn install
 yarn run android
-#
-# not tested on ios
 ```
+- not tested on ios
+- package.web.json will not work
 
 ## Appendix
 - create and run a react-web project
@@ -48,8 +48,6 @@ react-native run-ios
 - [Create React App](https://github.com/facebookincubator/create-react-app)
 - [Create React Native App](https://github.com/react-community/create-react-native-app): using [Expo](https://expo.io/)
 - [react-native-cli](https://github.com/facebook/react-native)
-
+- [react-navigation](https://github.com/react-community/react-navigation)
 - [React Native Packages](https://js.coach/react-native)
-- [React Packages](https://js.coach/react)
-
-- [redux-persist](https://github.com/rt2zz/redux-persist)
+- [JS Coach React Packages](https://js.coach/react)
