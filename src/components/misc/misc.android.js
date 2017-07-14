@@ -4,12 +4,11 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { Link } from 'react-router-native';
 
 const About = ({reducer, navigation}) => (
     <View >
         <Text>About</Text>
-        <Text>Current count: {reducer.count}</Text>
+        <Text>Current count: {reducer ? reducer.count : 0}</Text>
         <Text>Count from Home: {navigation.state.params ? navigation.state.params.count : 'no count'}</Text>
     </View>
 );

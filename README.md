@@ -1,10 +1,8 @@
-# React sample app running on web, android, and ios
+# React native controllers demo
 
 ## Techs
 - [React v15](https://facebook.github.io/react/)
 - [React Native v0.46](https://facebook.github.io/react-native/)
-- [React Redux v5](http://redux.js.org/)
-- [React Navigation v1](https://reactnavigation.org)
 
 
 ## Quick start
@@ -13,15 +11,9 @@
 ln -sfn package.native.json package.json
 yarn install
 yarn run android
-# not tested on web
+#
 # not tested on ios
 ```
-
-## About React Navigation
-- [React Navigation Doc](https://reactnavigation.org/docs)
-- [StackNavigator](https://reactnavigation.org/docs/navigators/stack)
-- [Navigation Options](https://reactnavigation.org/docs/navigators/navigation-options#Stack-Navigation-Options)
-
 
 ## Appendix
 - create and run a react-web project

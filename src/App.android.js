@@ -3,19 +3,21 @@
  */
 
 import React from 'react';
-import { View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 import { HomeContainer, AboutContainer } from './containers';
+import * as comps from './components';
 
 const RouteConfigs = {
-    Home: {screen: HomeContainer},
-    About: {screen: AboutContainer}
+    Home: {screen: comps.Home},
+    GridView: {screen: comps.GridView},
+    Touchable: {screen: comps.Touchable},
+    About: {screen: comps.About}
 };
 
 const StackNavigatorConfig = {
     mode: 'card',
-    headerMode: 'screen'
+    headerMode: 'screen' // float, screen, none
 };
 const App = StackNavigator(RouteConfigs, StackNavigatorConfig);
 
