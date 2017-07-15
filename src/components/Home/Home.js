@@ -52,8 +52,7 @@ class Home extends React.Component {
             dataSource: null,
             // itemCount: _listItems.length,
             itemsPerRow: 1,
-            variableContent: false,
-            useRandomCounts: false,
+            variableContent: false
         };
         this.state.dataSource = this._generateDataSource(_listItems);
     }
@@ -102,7 +101,7 @@ class Home extends React.Component {
                 // itemsPerRowPortrait={4}
                 // itemsPerRowLandscape={7}
                 renderItem={this._renderGridViewItem}
-                renderSectionHeader={this.state.useRandomCounts ? this._renderSectionHeader : null }
+                renderSectionHeader={this._renderSectionHeader}
             />
         );
     }

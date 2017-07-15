@@ -10,18 +10,6 @@ import {
 } from 'react-native';
 
 class GridView extends Component {
-    constructor(props) {
-        super(props);
-        this._getDataSource = this._getDataSource.bind(this);
-        this._initialLayout = true;
-        const dataSource = this._getDataSource(props);
-        this.state = {dataSource};
-    }
-
-    static get DataSource() {
-        return ListView.DataSource;
-    }
-
     static get propTypes() {
         return {
             data: PropTypes.array,
@@ -50,6 +38,19 @@ class GridView extends Component {
             itemsPerRowLandscape: null,
             itemsPerRowPortrait: null,
         };
+    }
+
+    constructor(props) {
+        super(props);
+
+        this._getDataSource = this._getDataSource.bind(this);
+        this._initialLayout = true;
+        const dataSource = this._getDataSource(props);
+        this.state = {dataSource};
+    }
+
+    static get DataSource() {
+        return ListView.DataSource;
     }
 
     componentWillReceiveProps(props) {
@@ -101,11 +102,7 @@ class GridView extends Component {
                         const itemID = rowID * itemsPerRow + index;
                         return (
                           <View key={itemID} style={[styles.item, this.props.itemStyle]}>
-                            {
-                              item
-                                ? this.props.renderItem(item, sectionID, rowID, index, itemID, ...args)
-                                : null
-                            }
+                            { item ? this.props.renderItem(item, sectionID, rowID, index, itemID, ...args) : null }
                           </View>
                         );
                       })}
@@ -187,15 +184,14 @@ class GridView extends Component {
 const styles = StyleSheet.create({
     list: {
         flexWrap: 'wrap',
-        alignItems: 'flex-start',
+        alignItems: 'flex-start'
     },
     row: {
-        flexDirection: 'row',
+        flexDirection: 'row'
     },
     item: {
-        flex: 1,
-    },
+        flex: 1
+    }
 });
 
 export default GridView;
-
