@@ -8,12 +8,11 @@
 ## Quick start
 ```
 # start android
-ln -sfn package.native.json package.json
 yarn install
 yarn run android
 ```
 - not tested on ios
-- package.web.json will not work
+
 
 ## Appendix
 - create and run a react-web project
