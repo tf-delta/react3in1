@@ -10,6 +10,7 @@ import {
     Text,
     TouchableOpacity,
     View,
+    NativeModules
 } from 'react-native';
 import GridView from '../GridView/GridView';
 
@@ -19,6 +20,8 @@ const _listItemsId = {
     'Touchable': 'Touchable',
     'About': 'About'
 };
+
+NativeModules.MyToastAndroid.show('Awesome', NativeModules.MyToastAndroid.SHORT);
 
 const _listItems = {
     'List View': [
