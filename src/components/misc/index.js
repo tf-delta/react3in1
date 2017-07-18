@@ -1,10 +1,12 @@
 
 import {
   About,
-  NotFound
+  NotFound,
+  Navbar
 } from './misc';
 
 export {
   About,
-  NotFound
+  NotFound,
+  Navbar
 }

@@ -1,23 +1,37 @@
 # React sample app running on web, android, and ios
 
 ## Techs
-- [React v15](https://facebook.github.io/react/)
+- [React, React Dom v15](https://facebook.github.io/react/)
 - [React Native v0.46](https://facebook.github.io/react-native/)
-- [React Redux v5](http://redux.js.org/)
+- [React Router v4](https://github.com/ReactTraining/react-router)
 - [React Navigation v1](https://reactnavigation.org)
+- [Redux v3](http://redux.js.org/)
 
 
-## Quick start
+## Quick start for Web
+```
+# use package.json for web
+ln -sfn package.web.json package.json
+yarn install
+yarn start
+```
+
+## Quick start for Mobile
 ```
 # start android
 ln -sfn package.native.json package.json
 yarn install
 yarn run android
-# not tested on web
-# not tested on ios
+
+# not tested on iOS
+yarn run ios
 ```
 
-## About React Navigation
+## About React Router for Web
+- [Doc](https://reacttraining.com/react-router/web)
+
+
+## About React Navigation for Mobile
 - [React Navigation Doc](https://reactnavigation.org/docs)
 - [StackNavigator](https://reactnavigation.org/docs/navigators/stack)
 - [Navigation Options](https://reactnavigation.org/docs/navigators/navigation-options#Stack-Navigation-Options)
@@ -56,8 +70,6 @@ react-native run-ios
 - [Create React App](https://github.com/facebookincubator/create-react-app)
 - [Create React Native App](https://github.com/react-community/create-react-native-app): using [Expo](https://expo.io/)
 - [react-native-cli](https://github.com/facebook/react-native)
-
 - [React Native Packages](https://js.coach/react-native)
 - [React Packages](https://js.coach/react)
-
 - [redux-persist](https://github.com/rt2zz/redux-persist)

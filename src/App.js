@@ -18,8 +18,8 @@ const Routes = () => (
 
 const App = () => (
     <Router><div>
-    <Navbar/>
-    <Routes/>
+        <Navbar/>
+        <Routes/>
     </div></Router>
 );
 

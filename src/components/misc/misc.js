@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const About = ({reducer}) => (
     <div>
@@ -19,7 +19,7 @@ const NotFound = () => (
 );
 
 const Navbar = () => (
-    <ul> 
+    <ul>
         <li style={{display:'inline'}}><Link to="/">| Home |</Link></li>
         <li style={{display:'inline'}}><Link to="/about">| About |</Link></li>
     </ul>

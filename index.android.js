@@ -1,17 +1,15 @@
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry} from 'react-native';
 import { Provider } from "react-redux";
 
-import Root from './src/App.android';
+import Root from './src/App.js';
 import Store from './src/Store';
 
-// export default class Main extends React.Component {
-//   render() {
-const Main = () => {
+export default Main = () => {
     return (
-    <Provider store={Store}>
-        <Root/>
-    </Provider>
+        <Provider store={Store}>
+            <Root/>
+        </Provider>
     )
 };
 

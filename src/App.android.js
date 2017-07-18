@@ -3,20 +3,20 @@
  */
 
 import React from 'react';
-import { View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import { HomeContainer, AboutContainer } from './containers';
+import { HomeContainer, AboutContainer} from './containers';
 
 const RouteConfigs = {
     Home: {screen: HomeContainer},
-    About: {screen: AboutContainer}
+    About: {screen: AboutContainer},
 };
 
 const StackNavigatorConfig = {
     mode: 'card',
     headerMode: 'screen'
 };
+
 const App = StackNavigator(RouteConfigs, StackNavigatorConfig);
 
 export default App;

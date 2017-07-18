@@ -2,7 +2,7 @@
  * Created by peterk on 7/11/17.
  */
 import React from 'react';
-import {Alert, Platform, StyleSheet, Text, TouchableNativeFeedback, View} from 'react-native';
+import {Platform, StyleSheet, Text, TouchableNativeFeedback, View} from 'react-native';
 
 class Home extends React.Component {
     constructor(props) {

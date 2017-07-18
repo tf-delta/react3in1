@@ -3,8 +3,6 @@
  */
 
 import { createStore, compose, applyMiddleware } from 'redux';
-import {persistStore, autoRehydrate} from 'redux-persist';
-import {AsyncStorage as Storage} from 'react-native';
 
 import Reducers from './Reducer';
 import Actions from './Action';
@@ -16,14 +14,11 @@ const devtool = window.__REDUX_DEVTOOLS_EXTENSION__;
 const devtool_enhancer = devtool && devtool(Actions);
 
 const Store = createStore(
-    Reducers,
-    undefined,
-    compose(
-        applyMiddleware(),
-        autoRehydrate()
-    )
+    Reducers, devtool_enhancer
+    // undefined,
+    // compose(
+    //     applyMiddleware(devtool_enhancer)
+    // )
 );
-
-persistStore(Store, {storage: Storage});
 
 export default Store;

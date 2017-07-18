@@ -4,7 +4,6 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { Link } from 'react-router-native';
 
 const About = ({reducer, navigation}) => (
     <View >
