@@ -27,14 +27,32 @@ yarn run android
 yarn run ios
 ```
 
-## About React Router for Web
+## React
+- [Github](https://github.com/facebook/react)
+- [Doc](https://facebook.github.io/react/docs)
+- [Tutorial](https://facebook.github.io/react/tutorial/tutorial.html)
+
+
+## React Native
+- [Github](https://github.com/facebook/react-native)
+- [Doc](http://facebook.github.io/react-native/docs)
+
+
+## React Router for Web
 - [Doc](https://reacttraining.com/react-router/web)
 
 
-## About React Navigation for Mobile
-- [React Navigation Doc](https://reactnavigation.org/docs)
+## React Navigation for Mobile
+- [Doc](https://reactnavigation.org/docs)
 - [StackNavigator](https://reactnavigation.org/docs/navigators/stack)
 - [Navigation Options](https://reactnavigation.org/docs/navigators/navigation-options#Stack-Navigation-Options)
+
+
+## Redux
+- [Github](https://github.com/reactjs/redux/)
+- [Dev Tool](https://github.com/zalmoxisus/redux-devtools-extension)
+    - [Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+- [Getting started](https://egghead.io/courses/getting-started-with-redux)
 
 
 ## Appendix

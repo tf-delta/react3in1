@@ -1,8 +1,8 @@
 import React from 'react';
-import { AppRegistry} from 'react-native';
+import { AppRegistry } from 'react-native';
 import { Provider } from "react-redux";
 
-import Root from './src/App.js';
+import Root from './src/App';
 import Store from './src/Store';
 
 export default Main = () => {

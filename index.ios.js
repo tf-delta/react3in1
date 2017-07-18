@@ -1,1 +1,1 @@
-export * from './index.android';
+export {default} from './index.android';
