@@ -3,7 +3,7 @@
  */
 
 import HomeContainer from './Home';
-import { AboutContainer } from './misc';
+import AboutContainer from './About';
 
 export {
   HomeContainer,

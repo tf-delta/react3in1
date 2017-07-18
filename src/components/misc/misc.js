@@ -5,13 +5,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const About = ({reducer}) => (
-    <div>
-        <h1>About</h1>
-        <p>Current count: {reducer.count}</p>
-    </div>
-);
-
 const NotFound = () => (
     <div>
         <h1>Not Found</h1>
@@ -26,7 +19,6 @@ const Navbar = () => (
 );
 
 export {
-  About,
   NotFound,
   Navbar
 };

@@ -7,6 +7,4 @@ import { About } from '../components'
 
 const AboutContainer = connect((state)=>({reducer:state.reducer}))(About);
 
-export {
-  AboutContainer
-};
+export default AboutContainer;

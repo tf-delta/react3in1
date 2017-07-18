@@ -1,4 +1,1 @@
-/**
- * Created by peterk on 7/11/17.
- */
-export * from './Home.android';
+export {default} from './Home.android';

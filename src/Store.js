@@ -5,20 +5,19 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 
 import Reducers from './Reducer';
-import Actions from './Action';
+// import Actions from './Action';
 
 // ================
 // stores
 //
-const devtool = window.__REDUX_DEVTOOLS_EXTENSION__;
-const devtool_enhancer = devtool && devtool(Actions);
+/* eslint-disable no-underscore-dangle */
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const Store = createStore(Reducers,
+    /* preloadedState, */
+    composeEnhancers(
+        applyMiddleware(/*...middleware*/)
+));
+/* eslint-enable */
 
-const Store = createStore(
-    Reducers, devtool_enhancer
-    // undefined,
-    // compose(
-    //     applyMiddleware(devtool_enhancer)
-    // )
-);
 
 export default Store;
